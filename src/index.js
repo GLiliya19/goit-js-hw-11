@@ -32,11 +32,6 @@ selectors.form.addEventListener('input', throttle(handleInput, 500));
 selectors.form.addEventListener('submit', onSearch);
 selectors.loadMoreBtn.addEventListener('click', onLoad);
 
-document.addEventListener('DOMContentLoaded', function () {
-  const loadMoreButton = document.querySelector('.load-more');
-  loadMoreButton.style.display = 'none';
-});
-
 function handleInput(evt) {
   query = evt.target.value;
 }
